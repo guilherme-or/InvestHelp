@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap');
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+/* Fonte: font-family: 'Nunito Sans', sans-serif; */
+
+/* Paleta de cores:
+0E1526
+3243AC
+5A4C98
+BC6D91
+F198B8 */
 
 /* Reset CSS */
 * {
@@ -7,14 +17,279 @@
     box-sizing: border-box;
 }
 
-h1,h2,h3 {
-    color: rgb(5, 50, 60);
-    font-family: 'Source Code Pro', monospace;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+h1,h3 {
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 50px;
     font-weight: 500;
     text-align: left;
 }
 
-body {
-    font-family: ;
+/* Header */
+.header {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: #244a75;
 }
+
+.header_home {
+    font-weight: 800;
+    font-size: 60px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+.header_home img {
+    width: 8%;
+    height: 8%;
+}
+
+.header_home:hover {
+    color: rgb(230, 50, 70);
+}
+
+.header_menu ul {
+    list-style: none;
+    display: flex;   
+}
+
+.header_menu li {
+    margin: 0 10px;
+}
+
+.item_menu {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.item_menu:hover {
+    color: rgb(230, 50, 70);
+}
+
+.item_menu__login {
+    border: #fff solid 1px;
+    padding: 10px;
+    color: #244a75;
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 800;
+    transition: all 0.5s;
+}
+
+.item_menu__login:hover {
+    background-color: rgb(230, 50, 70);
+    border: none;
+    color: #fff;
+}
+/* Fim Header */
+
+/* Container 1 / Imagem de Fundo */
+.container1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+
+}
+
+.imagem_fundo {
+    background-image: url(../images/investHelp2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: scroll;
+}
+
+.container1_conteudo {
+    width: 50%;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    text-align: center;
+}
+
+.texto_imagem {
+    width: 80%;
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.link {
+    color: #fff;
+    border: #fff solid 1px;
+    border-radius: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 15px;
+    transition: all 0.5s;
+}
+
+.link:hover {
+    color: rgb(230, 50, 70); 
+    border: none;
+    background-color: #fff;
+}
+/* Fim Container 1 / Imagem de Fundo */
+
+/* Container 2 / Cards */
+.container2 {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cor_fundo1 {
+    background-color: rgb(237, 244, 255);
+}
+
+.container2_card {
+    width: 20%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.container2_card img {
+    width: 25%;
+    /* height: 20%; */
+}
+
+.container2_card p {
+    color: 0;
+    font-size: 22px;
+}
+
+.container2_card h2 {
+    color: 0;
+    font-size: 35px;
+}
+/* Fim Container 2 / Cards */
+
+/* Container 3 */
+.container3 {
+    width: 100%;
+    height: 120vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container3 h1 {
+    font-size: 60px;
+    font-weight: 600;
+
+}
+
+.container3 a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    border: #fff solid 2px;
+    padding: 15px;
+    transition: all 0.5s;
+}
+
+.container3 a:hover {
+    background-color: #fff;
+    color: rgb(230, 50, 70);
+}
+
+.cor_fundo2 {
+    background-color: #12263d;
+}
+
+.container3_conteudo {
+    width: 80%;
+    height: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border: #fff dotted 5px;
+}
+
+.conteudo_texto {
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.conteudo_texto p{
+    font-size: 22px;
+}
+
+.conteudo_imagem1 {
+    width: 40%;
+    height: 100%;   
+    background-image: url(../images/investHelp3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: scroll;
+}
+
+.conteudo_imagem2 {
+    width: 30%;
+    height: 100%;   
+    background-image: url(../images/investHelp4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: scroll;
+}
+/* Fim Container 3 */
+
+/* Footer */
+.footer {
+    
+}
+
+
+/* Fim Footer */
