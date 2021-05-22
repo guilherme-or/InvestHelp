@@ -4,6 +4,7 @@
 /* Fonte: font-family: 'Nunito Sans', sans-serif; */
 
 /* Paleta de cores:
+244a75*
 0E1526
 3243AC
 5A4C98
@@ -46,14 +47,14 @@ h1,h3 {
     position: fixed;
     top: 0%;
     left: 0%;
-    background-color: #244a75;
+    background-color: #fff;
 }
 
 .header_home {
     font-weight: 800;
     font-size: 60px;
     text-decoration: none;
-    color: #fff;
+    color: #244a75;
     transition: all 0.5s;
     display: flex;
     align-items: center;
@@ -64,13 +65,15 @@ h1,h3 {
     height: 8%;
 }
 
-.header_home:hover {
+/*.header_home:hover {
     color: rgb(230, 50, 70);
-}
+}*/
 
 .header_menu ul {
+    width: 70vh;
     list-style: none;
-    display: flex;   
+    display: flex;
+    justify-content: space-around; 
 }
 
 .header_menu li {
@@ -78,30 +81,30 @@ h1,h3 {
 }
 
 .item_menu {
-    color: #fff;
+    color: #0c1826;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
     transition: all 0.5s;
 }
 
 .item_menu:hover {
-    color: rgb(230, 50, 70);
+    color: #244a75;
 }
 
 .item_menu__login {
     border: #fff solid 1px;
     padding: 10px;
-    color: #244a75;
-    background-color: #fff;
+    background-color: #244a75;
+    color: #fff;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 800;
     transition: all 0.5s;
 }
 
 .item_menu__login:hover {
-    background-color: rgb(230, 50, 70);
+    background-color: #4f6074;
     border: none;
     color: #fff;
 }
@@ -127,9 +130,9 @@ h1,h3 {
 }
 
 .container1_conteudo {
-    width: 50%;
+    width:37%;
     height: 100vh;
-    color: #fff;
+    color: #0d1a2a;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,24 +145,30 @@ h1,h3 {
     width: 80%;
     font-size: 35px;
     line-height: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     font-weight: 600;
+}
+
+#title {
+    font-weight: 800;
+    font-size: 45px;
 }
 
 .link {
     color: #fff;
-    border: #fff solid 1px;
-    border-radius: 15px;
+    background-color: #244a75;
+    border: #244a75 solid 1px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 800;
     padding: 15px;
     transition: all 0.5s;
+    margin-top: 50px;
 }
 
 .link:hover {
-    color: rgb(230, 50, 70); 
+    color: #244a75; 
     border: none;
     background-color: #fff;
 }
@@ -232,8 +241,9 @@ h1,h3 {
 }
 
 .container3 a:hover {
-    background-color: #fff;
-    color: rgb(230, 50, 70);
+    color: #fff;
+    background-color: rgb(230, 50, 70);
+    border: none;
 }
 
 .cor_fundo2 {
